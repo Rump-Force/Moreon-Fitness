@@ -4304,4 +4304,14 @@ sup {
 	.banner__content-button {
 		width: 100%;
 	}
+
+	.card__inner {
+		grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+		justify-items: center;
+	}
+
+	.card__item {
+		max-width: 300px;
+		width: 100%;
+	}
 }
