@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<!-- swiper -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+
+		<!-- swiper -->
+
+		<link rel="stylesheet" href="css/styles.css" />
+		<!-- Шрифты -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Шрифты -->
+		<!-- <link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+		/> -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+		/>
+		<!--=============== boxicons ===============-->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css"
+			crossorigin=""
+		/>
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__inner">
+				<div class="header__top">
+					<div class="container">
+						<div class="header__box">
+							<div class="header__top-mobile">
+								<svg class="icon">
+									<use xlink:href="images/sprite.svg#phone"></use>
+								</svg>
+								<a href="tel:74958590372" class="header__top-mobile-link"
+									>+7 (495) 859-03-72
+								</a>
+							</div>
+							<div class="header__top-social">
+								<a href="#">
+									<svg class="icon">
+										<use xlink:href="images/sprite.svg#telegram"></use>
+									</svg>
+								</a>
+								<a href="#">
+									<svg class="icon">
+										<use xlink:href="images/sprite.svg#instagram"></use>
+									</svg>
+								</a>
+								<a href="#">
+									<svg class="icon">
+										<use xlink:href="images/sprite.svg#Facebook"></use>
+									</svg>
+								</a>
+								<a href="#">
+									<svg class="icon">
+										<use xlink:href="images/sprite.svg#vk"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header__bottom">
+					<div class="container">
+						<div class="header__bottom-box">
+							<button class="header__burger-menu">
+								<span class="burger-menu-item"></span>
+								<span class="burger-menu-item"></span>
+								<span class="burger-menu-item"></span>
+							</button>
+							<div class="header__logo">
+								<a href="index.html">
+									<svg class="icon">
+										<use xlink:href="images/sprite.svg#logo-white"></use>
+									</svg>
+								</a>
+							</div>
+							<nav class="header__bottom-menu">
+								<ul class="header__menu-list">
+									<li class="header__menu-item">
+										<a href="club.html" class="header__menu-link">О клубе</a>
+									</li>
+									<li class="header__menu-item">
+										<a href="classes.html" class="header__menu-link"
+											>КроссТренинг</a
+										>
+									</li>
+									<li class="header__menu-item">
+										<a href="club-cards.html" class="header__menu-link">Клубные карты</a>
+									</li>
+									<li class="header__menu-item">
+										<a href="services.html" class="header__menu-link">Услуги</a>
+									</li>
+									<li class="header__menu-item">
+										<a href="" class="header__menu-link">Расписание</a>
+									</li>
+									<li class="header__menu-item">
+										<a href="" class="header__menu-link">Бани и бассейны</a>
+									</li>
+									<li class="header__menu-item">
+										<a href="" class="header__menu-link">Детский центр</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="overlay"></div>
+
+		<div class="sidebar">
+			<!-- <div class="sidebar__close-icons"></div> -->
+			<nav class="sidebar__menu">
+				<ul class="sidebar__menu-item">
+					<li class="sidebar__menu-items">
+						<a href="club.html" class="sidebar__menu-link">О клубе</a>
+					</li>
+					<li class="sidebar__menu-items">
+						<a href="classes.html" class="sidebar__menu-link">КроссТренинг</a>
+					</li>
+					<li class="sidebar__menu-items">
+						<a href="club-cards.html" class="sidebar__menu-link">Клубные карты</a>
+					</li>
+					<li class="sidebar__menu-items">
+						<a href="services.html" class="sidebar__menu-link">Услуги</a>
+					</li>
+					<li class="sidebar__menu-items">
+						<a href="#" class="sidebar__menu-link">Расписание</a>
+					</li>
+					<li class="sidebar__menu-items">
+						<a href="#" class="sidebar__menu-link">Бани и бассейны</a>
+					</li>
+					<li class="sidebar__menu-items">
+						<a href="#" class="sidebar__menu-link">Детский центр</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
+		<section class="consequential">
+			<div class="container">
+				<div class="consequential__inner">
+					<div class="classes__breadcrumb">
+						<ul class="classes__breadcrumb-list">
+							<li class="classes_breadcrumb-item">
+								<a href="index.html" class="classes_breadcrumb-link">Главная</a>
+							</li>
+							<li class="classes_breadcrumb-item active-breadcrumb">Команда</li>
+						</ul>
+					</div>
+
+					<div class="consequential__wrapper">
+						<div class="consequential__information">
+							<div class="consequential__information-stic">
+								<div class="consequential__information-img">
+									<img src="images/img/consequentia-1.webp" alt="" />
+								</div>
+								<div class="hashtags">
+									<p class="consequential__hashtags">#Аэробные программы</p>
+									<p class="consequential__hashtags">#Боевые искусства</p>
+									<p class="consequential__hashtags">
+										#Аэробно-силовае программы
+									</p>
+									<p class="consequential__hashtags">#Танцевальные программы</p>
+								</div>
+							</div>
+						</div>
+						<div class="consequential__content">
+							<h2 class="consequential__title">Иванов Иван</h2>
+							<div class="consequential__text-box">
+								<p class="consequential__text">Премиум тренер</p>
+								<p class="consequential__text">Стаж работы: с 2000 года</p>
+								<p class="consequential__text">
+									Телефон:
+									<a href="tel:70001112233" class="consequential__text-link"
+										>+7 (000) 111-22-33</a
+									>
+								</p>
+								<p class="consequential__text">
+									Instagram: <a href="#">@IvanIvanov35h7</a>
+								</p>
+							</div>
+
+							<div class="consequential__box-wrapper">
+								<h3 class="consequential__subtitle">Специализация</h3>
+								<p class="consequential__text-info">
+									Силовой тренинг, коррекция фигуры, уменьшение объема жировой
+									ткани, набор мышечной массы, рекомендации по питанию,
+									индивидуальный подбор упражнений и постановка техники
+									выполнения, исправление осанки.
+								</p>
+							</div>
+							<div class="consequential__box-wrapper">
+								<h3 class="consequential__subtitle">Образование</h3>
+								<p class="consequential__text-info">
+									- Могилевский Государственный Университет им. А.А.Кулешова,
+									Специальная подготовка / Физическая культура. - ЭНЕРДЖИМ
+									ФИТНЕС СТУДИО. Персональный тренер.
+								</p>
+							</div>
+							<div class="consequential__box-wrapper">
+								<h3 class="consequential__subtitle">Достижения</h3>
+								<p class="consequential__text-info">
+									Мастер спорта по тяжёлой атлетике, Чемпион Европы 2002г.
+									Призер Чемпионата Европы 2003г.
+								</p>
+							</div>
+							<div class="consequential__individual">
+								<h3 class="consequential__individual-title">
+									индивидуальные занятия тренера
+								</h3>
+								<p class="consequential__individual-text">
+									Силовой тренинг, коррекция фигуры, уменьшение объема жировой
+									ткани, набор мышечной массы, рекомендации по питанию,
+									индивидуальный подбор упражнений и постановка техники
+									выполнения, исправление осанки.
+								</p>
+								<button class="consequential__individual-button btn-button">
+									Записаться на индивидуальное занятие
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- <script>
+		
+		</script> -->
+
+		<section class="stock">
+			<div class="container">
+				<div class="inner__stock">
+					<h2 class="stock-title">Акции</h2>
+
+					<!-- <div class="stock__box-btn">
+						<button class="stock-btn text-btn" data-index="0">Аквапарк</button>
+						<button class="stock-btn text-btn" data-index="1">Термы</button>
+						<button class="stock-btn text-btn" data-index="2">СПА</button>
+						<button class="stock-btn text-btn" data-index="3">
+							Праздникик
+						</button>
+						<button class="stock-btn text-btn" data-index="4">Фитнес</button>
+						<button class="stock-btn text-btn" data-index="5">Боулинг</button>
+					</div> -->
+					<div class="swiper mySwiper swiper-stock">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img
+									src="images/img/stock_slider-1.webp"
+									alt=""
+									class="swiper__slide-stock"
+								/>
+							</div>
+							<div class="swiper-slide">
+								<img
+									src="images/img/stock_slider-2.webp"
+									alt=""
+									class="swiper__slide-stock"
+								/>
+							</div>
+							<div class="swiper-slide">
+								<img
+									src="images/img/stock_slider-3.webp"
+									alt=""
+									class="swiper__slide-stock"
+								/>
+							</div>
+							<div class="swiper-slide">
+								<img
+									src="images/img/stock_slider-2.webp"
+									alt=""
+									class="swiper__slide-stock"
+								/>
+							</div>
+						</div>
+						<div
+							class="swiper-pagination dealt-pagination stock__swiper-pagination"
+						></div>
+					</div>
+					<div class="swiper__slide-navigation">
+						<div class="swiper-button-prev dealt-btn-prev stock__swiper-prev">
+							<svg class="icon icon-navigation">
+								<use xlink:href="images/sprite.svg#Arrow_left-stock"></use>
+							</svg>
+						</div>
+						<div class="swiper-button-next dealt-btn-next stock__swiper-next">
+							<svg class="icon icon-navigation">
+								<use xlink:href="images/sprite.svg#Arrow_right-stock"></use>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="fitness">
+			<div class="container">
+				<h2 class="fitness__title">
+					<span class="title-accent">Зоны</span> фитнес клуба
+				</h2>
+				<div class="fitness__inner">
+					<div class="fitness__button-box">
+						<button class="fitness__btn" onclick="openTab2(event, 'group')">
+							Зал групповых тренировок
+						</button>
+						<button class="fitness__btn" onclick="openTab2(event, 'gym-evil')">
+							Тренажерный зал
+						</button>
+						<button
+							class="fitness__btn"
+							onclick="openTab2(event, 'сardiovascular')"
+						>
+							Зал кардио тренажеров
+						</button>
+						<button class="fitness__btn" onclick="openTab2(event, 'martial')">
+							Зал единоборств
+						</button>
+					</div>
+
+					<div class="fitness__tab" id="group" style="display: flex">
+						<div class="fitness__tab-img">
+							<!-- Основной слайдер -->
+							<div class="swiper fitness-sviper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide fitness-clide">
+										<img src="images/img/fitness_slider-1-1.webp" alt="" />
+									</div>
+									<div class="swiper-slide fitness-clide">
+										<img src="images/img/fitness_slider-1-2.webp" alt="" />
+									</div>
+									<div class="swiper-slide fitness-clide">
+										<img src="images/img/fitness_slider-1-3.webp" alt="" />
+									</div>
+									<div class="swiper-slide fitness-clide">
+										<img src="images/img/fitness_slider-1-4.webp" alt="" />
+									</div>
+								</div>
+
+								<div class="swiper-pagination-btn">
+									<div class="swiper-button-prev pagination-button-prev">
+										<svg class="icon icon-navigation">
+											<use
+												xlink:href="images/sprite.svg#Arrow_left-stock"
+											></use>
+										</svg>
+									</div>
+									<div class="swiper-button-next pagination-button-next">
+										<svg class="icon icon-navigation">
+											<use
+												xlink:href="images/sprite.svg#Arrow_right-stock"
+											></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+
+							<!-- Слайдер миниатюр -->
+							<div class="swiper fitness-thumbs">
+								<div class="swiper-wrapper">
+									<!-- Миниатюры должны идти в том же порядке, что и основные слайды -->
+									<div class="swiper-slide">
+										<img src="images/img/fitness_slider-1-1.webp" alt="" />
+									</div>
+									<div class="swiper-slide">
+										<img src="images/img/fitness_slider-1-2.webp" alt="" />
+									</div>
+									<div class="swiper-slide">
+										<img src="images/img/fitness_slider-1-3.webp" alt="" />
+									</div>
+									<div class="swiper-slide">
+										<img src="images/img/fitness_slider-1-4.webp" alt="" />
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="fitness__tab-content">
+							<h3 class="fitness__tab-content-title">
+								Зал групповых тренировок
+							</h3>
+							<p class="fitness__tab-content-text">
+								Тренажерный зал оборудован гантельным рядом (от 1 до 40 кг),
+								множеством силовых тренажеров и набором штанг.
+							</p>
+							<p class="fitness__tab-content-text">
+								Под каждую группу мышц есть как минимум 5 разновидностей
+								оборудования.
+							</p>
+							<button
+								class="fitness__tab-content-bnt btn-button open__fitness-popup"
+							>
+								Записаться на гостевой визит
+							</button>
+						</div>
+					</div>
+					<div class="fitness__tab" id="gym-evil">
+						<div class="fitness__tab-img">
+							<!-- Основной слайдер -->
+							<div class="swiper fitness-sviper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide fitness-clide">
+										<img src="images/img/fitness_slider-2-1.webp" alt="" />
+									</div>
+									<div class="swiper-slide fitness-clide">
+										<img src="images/img/fitness_slider-2-2.webp" alt="" />
+									</div>
+									<div class="swiper-slide fitness-clide">
+										<img src="images/img/fitness_slider-2-3.webp" alt="" />
+									</div>
+									<div class="swiper-slide fitness-clide">
+										<img src="images/img/fitness_slider-2-4.webp" alt="" />
+									</div>
+								</div>
+
+								<div class="swiper-pagination-btn">
+									<div class="swiper-button-prev pagination-button-prev">
+										<svg class="icon icon-navigation">
+											<use
+												xlink:href="images/sprite.svg#Arrow_left-stock"
+											></use>
+										</svg>
+									</div>
+									<div class="swiper-button-next pagination-button-next">
+										<svg class="icon icon-navigation">
+											<use
+												xlink:href="images/sprite.svg#Arrow_right-stock"
+											></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+
+							<!-- Слайдер миниатюр -->
+							<div class="swiper fitness-thumbs">
+								<div class="swiper-wrapper">
+									<!-- Миниатюры должны идти в том же порядке, что и основные слайды -->
+									<div class="swiper-slide">
+										<img src="images/img/fitness_slider-2-1.webp" alt="" />
+									</div>
+									<div class="swiper-slide">
+										<img src="images/img/fitness_slider-2-2.webp" alt="" />
+									</div>
+									<div class="swiper-slide">
+										<img src="images/img/fitness_slider-2-3.webp" alt="" />
+									</div>
+									<div class="swiper-slide">
+										<img src="images/img/fitness_slider-2-4.webp" alt="" />
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="fitness__tab-content">
+							<h3 class="fitness__tab-content-title">Тренажерный зал</h3>
+							<p class="fitness__tab-content-text">
+								Тренажёрный зал — это место, где рождаются сила, выносливость и
+								уверенность в себе.
+							</p>
+							<p class="fitness__tab-content-text">
+								Современное оборудование, комфортная атмосфера и индивидуальный
+								подход помогут каждому достичь своих целей — будь то набор
+								мышечной массы, снижение веса или поддержание формы.
+							</p>
+							<button
+								class="fitness__tab-content-bnt btn-button open__fitness-popup"
+							>
+								Записаться на гостевой визит
+							</button>
+						</div>
+					</div>
+					<div class="fitness__tab" id="сardiovascular">
+						<div class="fitness__tab-img">
+							<!-- Основной слайдер -->
+							<div class="swiper fitness-sviper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide fitness-clide">
+										<img src="images/img/fitness_slider-3-1.webp" alt="" />
+									</div>
+									<div class="swiper-slide fitness-clide">
+										<img src="images/img/fitness_slider-3-2.webp" alt="" />
+									</div>
+									<div class="swiper-slide fitness-clide">
+										<img src="images/img/fitness_slider-3-3.webp" alt="" />
+									</div>
+									<div class="swiper-slide fitness-clide">
+										<img src="images/img/fitness_slider-3-4.webp" alt="" />
+									</div>
+								</div>
+
+								<div class="swiper-pagination-btn">
+									<div class="swiper-button-prev pagination-button-prev">
+										<svg class="icon icon-navigation">
+											<use
+												xlink:href="images/sprite.svg#Arrow_left-stock"
+											></use>
+										</svg>
+									</div>
+									<div class="swiper-button-next pagination-button-next">
+										<svg class="icon icon-navigation">
+											<use
+												xlink:href="images/sprite.svg#Arrow_right-stock"
+											></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+
+							<!-- Слайдер миниатюр -->
+							<div class="swiper fitness-thumbs">
+								<div class="swiper-wrapper">
+									<!-- Миниатюры должны идти в том же порядке, что и основные слайды -->
+									<div class="swiper-slide">
+										<img src="images/img/fitness_slider-3-1.webp" alt="" />
+									</div>
+									<div class="swiper-slide">
+										<img src="images/img/fitness_slider-3-2.webp" alt="" />
+									</div>
+									<div class="swiper-slide">
+										<img src="images/img/fitness_slider-3-3.webp" alt="" />
+									</div>
+									<div class="swiper-slide">
+										<img src="images/img/fitness_slider-3-4.webp" alt="" />
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="fitness__tab-content">
+							<h3 class="fitness__tab-content-title">Зал кардио тренажеров</h3>
+							<p class="fitness__tab-content-text">
+								Зал кардио-тренажёров — идеальное место для тех, кто стремится
+								улучшить выносливость, сбросить лишний вес и укрепить
+								сердечно-сосудистую систему.
+							</p>
+							<p class="fitness__tab-content-text">
+								В вашем распоряжении современные беговые дорожки, велотренажёры,
+								эллипсоиды и степперы. Пространство оснащено всем необходимым
+								для комфортных и эффективных тренировок. Подходит как для
+								начинающих, так и для опытных спортсменов.
+							</p>
+							<button
+								class="fitness__tab-content-bnt btn-button open__fitness-popup"
+							>
+								Записаться на гостевой визит
+							</button>
+						</div>
+					</div>
+					<div class="fitness__tab" id="martial">
+						<div class="fitness__tab-img">
+							<!-- Основной слайдер -->
+							<div class="swiper fitness-sviper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide fitness-clide">
+										<img src="images/img/fitness_slider-4-1.webp" alt="" />
+									</div>
+									<div class="swiper-slide fitness-clide">
+										<img src="images/img/fitness_slider-4-2.webp" alt="" />
+									</div>
+									<div class="swiper-slide fitness-clide">
+										<img src="images/img/fitness_slider-4-3.webp" alt="" />
+									</div>
+									<div class="swiper-slide fitness-clide">
+										<img src="images/img/fitness_slider-4-4.webp" alt="" />
+									</div>
+								</div>
+
+								<div class="swiper-pagination-btn">
+									<div class="swiper-button-prev pagination-button-prev">
+										<svg class="icon icon-navigation">
+											<use
+												xlink:href="images/sprite.svg#Arrow_left-stock"
+											></use>
+										</svg>
+									</div>
+									<div class="swiper-button-next pagination-button-next">
+										<svg class="icon icon-navigation">
+											<use
+												xlink:href="images/sprite.svg#Arrow_right-stock"
+											></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+
+							<!-- Слайдер миниатюр -->
+							<div class="swiper fitness-thumbs">
+								<div class="swiper-wrapper">
+									<!-- Миниатюры должны идти в том же порядке, что и основные слайды -->
+									<div class="swiper-slide">
+										<img src="images/img/fitness_slider-4-1.webp" alt="" />
+									</div>
+									<div class="swiper-slide">
+										<img src="images/img/fitness_slider-4-2.webp" alt="" />
+									</div>
+									<div class="swiper-slide">
+										<img src="images/img/fitness_slider-4-3.webp" alt="" />
+									</div>
+									<div class="swiper-slide">
+										<img src="images/img/fitness_slider-4-4.webp" alt="" />
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="fitness__tab-content">
+							<h3 class="fitness__tab-content-title">Зал единоборств</h3>
+							<p class="fitness__tab-content-text">
+								Зал единоборств — это пространство силы, дисциплины и
+								саморазвития. Здесь проходят тренировки по боксу, кикбоксингу,
+								MMA, борьбе и другим видам боевых искусств. Зал оснащён всем
+								необходимым: рингом, мешками, татами и тренажёрами для отработки
+								техники.
+							</p>
+							<p class="fitness__tab-content-text">
+								Под руководством опытных тренеров каждый сможет улучшить
+								физическую форму, освоить боевые навыки и укрепить дух.
+								Независимо от уровня подготовки, здесь найдётся подходящая
+								программа как для новичков, так и для профессионалов.
+							</p>
+							<button
+								class="fitness__tab-content-bnt btn-button open__fitness-popup"
+							>
+								Записаться на гостевой визит
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="fitness__overlay"></div>
+
+		<div class="fitness__popup">
+			<div class="popup__box">
+				<h2 class="popup__box-title">Записаться на гостевой визит</h2>
+				<p class="popup__box-text">
+					Мы расскажем вам о всех преимуществах клуба<br />
+					Moreon Fitness
+				</p>
+			</div>
+			<form action="" class="popup__form">
+				<input
+					type="text"
+					name="name"
+					placeholder="Напишите ваше ФИО"
+					required
+				/>
+
+				<input type="tel" name="phone" placeholder="+7" required />
+				<input class="date-input" type="date" id="date" name="date" />
+
+				<div class="checkbox-wrapper">
+					<input type="checkbox" id="processing" name="processing" />
+					<label for="processing"
+						>Соглашаюсь с условиями обработки данных</label
+					>
+				</div>
+
+				<span class="form__close-icon">
+					<div class="form__close"><i class="ri-close-line"></i></div>
+				</span>
+
+				<button class="popup__form-btn text-btn btn-button" type="submit">
+					Отправить
+				</button>
+			</form>
+		</div>
+
+		<div class="video">
+			<div class="container">
+				<div class="video__inner">
+					<h2 class="video__title">
+						Видео о клубе <span class="title-accent">Moreon Fitness</span>
+					</h2>
+					<div class="video__box">
+						<video
+							src="images/Moreon Fitness.mp4"
+							loop
+							controls
+							controlsList="nodownload noremoteplayback"
+						></video>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<section class="visiting">
+			<div class="container">
+				<h2 class="visiting__title title-text">
+					Выгоды посещения <span class="title-accent">фитнес клуба</span>
+				</h2>
+				<div class="visiting__inner">
+					<div class="visiting__box">
+						<ul class="visiting__box-list">
+							<li class="visiting__box-item">
+								<img
+									src="images/icons/visiting_1.svg"
+									alt=""
+									class="visiting__item-img"
+								/>
+								<div class="visiting__item-content">
+									<h3 class="visiting__item-title">Красивая фигура</h3>
+									<p class="visiting__item-text">
+										Мы выбираем быть красивыми, здоровыми и гармоничными
+									</p>
+								</div>
+							</li>
+							<li class="visiting__box-item">
+								<img
+									src="images/icons/visiting_2.svg"
+									alt=""
+									class="visiting__item-img"
+								/>
+								<div class="visiting__item-content">
+									<h3 class="visiting__item-title">Спа</h3>
+									<p class="visiting__item-text">
+										В клубную карту входит посещенние СПА и бассейна
+									</p>
+								</div>
+							</li>
+							<li class="visiting__box-item">
+								<img
+									src="images/icons/visiting_3.svg"
+									alt=""
+									class="visiting__item-img"
+								/>
+								<div class="visiting__item-content">
+									<h3 class="visiting__item-title">Подходит всем</h3>
+									<p class="visiting__item-text">
+										Фитнес программы для всех уровней подготовки
+									</p>
+								</div>
+							</li>
+							<li class="visiting__box-item">
+								<img
+									src="images/icons/visiting_4.svg"
+									alt=""
+									class="visiting__item-img"
+								/>
+								<div class="visiting__item-content">
+									<h3 class="visiting__item-title">Опытные тренеры</h3>
+									<p class="visiting__item-text">
+										Фитнес программы для всех уровней подготовки
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="partners">
+			<div class="container">
+				<div class="inner__partners">
+					<div
+						class="svg-slider"
+						style="--width: 160px; --height: 126px; --quantity: 6"
+					>
+						<div class="svg-slider__box">
+							<div class="svg-slider__item" style="--position: 1">
+								<svg class="icon">
+									<use xlink:href="images/sprite.svg#moreon"></use>
+								</svg>
+							</div>
+							<div class="svg-slider__item" style="--position: 2">
+								<svg class="icon">
+									<use xlink:href="images/sprite.svg#port"></use>
+								</svg>
+							</div>
+							<div class="svg-slider__item" style="--position: 3">
+								<svg class="icon">
+									<use xlink:href="images/sprite.svg#event"></use>
+								</svg>
+							</div>
+							<div class="svg-slider__item" style="--position: 4">
+								<svg class="icon">
+									<use xlink:href="images/sprite.svg#bouling"></use>
+								</svg>
+							</div>
+							<div class="svg-slider__item" style="--position: 5">
+								<svg class="icon">
+									<use xlink:href="images/sprite.svg#mopeon"></use>
+								</svg>
+							</div>
+							<div class="svg-slider__item" style="--position: 6">
+								<svg class="icon">
+									<use xlink:href="images/sprite.svg#term"></use>
+								</svg>
+							</div>
+							<!-- Повтори столько, сколько нужно для плотного потока -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<section class="contacts contacts-bg">
+			<div class="container">
+				<div class="contacts__inner">
+					<div class="contacts__box">
+						<h2 class="contacts__title">Контакты</h2>
+						<ul class="contacts__info">
+							<li class="contacts__info-items">
+								<h3 class="contacts__subtitle">Адрес:</h3>
+								<a
+									href="https://www.google.com/maps?q=г. Москва, м. Ясенево, ул. Голубинская, д. 16"
+									class="contacts__text text-home"
+									target="blank"
+								>
+									г. Москва м. Ясенево, ул. Голубинская, д. 16
+								</a>
+							</li>
+							<li class="contacts__info-items">
+								<h3 class="contacts__subtitle">Телефон:</h3>
+								<a href="tel:+74954816060" class="contacts__text text-home"
+									>+7 (495) 481-60-60
+								</a>
+							</li>
+							<li class="contacts__info-items">
+								<h3 class="contacts__subtitle">E-mail:</h3>
+								<a
+									href="mailto:moreon@more-on.ru"
+									class="contacts__text text-home"
+									>moreon@more-on.ru
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="contacts__map">
+						<div class="map-container">
+							<iframe
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2240.6152292065114!2d37.527184!3d55.597246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab4a31de0e065%3A0x65f0114a4f91c01a!2z0YPQuy4g0JPQtdC90LjQvdCw0Y8sIDE2LCDQnNC-0YHQutCy0LAsINCc0L7RgdC60LLQsCwgMTE3NTU3!5e0!3m2!1sru!2sru!4v1717684420006!5m2!1sru!2sru"
+								allowfullscreen=""
+								loading="lazy"
+								referrerpolicy="no-referrer-when-downgrade"
+							></iframe>
+							<div class="map-marker">📍 Наш адрес</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__inner">
+					<div class="footer__top">
+						<div class="footer__item footer__item-time">
+							<div class="footer__logo">
+								<svg class="icon footer__logo-icon">
+									<use xlink:href="images/sprite.svg#logo-white"></use>
+								</svg>
+							</div>
+							<div class="footer__item-time">
+								<h3 class="footer__item-time-title">Время работы:</h3>
+								<div class="footer__list">
+									<p class="footer__list-text">
+										Будни: <time datetime="07:00">07:00</time> -
+										<time datetime="23:00">23:00</time>
+									</p>
+									<p class="footer__list-text">
+										Бассейн: <time datetime="07:00">07:00</time> -
+										<time datetime="23:00">23:00</time>
+									</p>
+								</div>
+								<div class="footer__list">
+									<p class="footer__list-text">
+										Выходные: <time datetime="09:00">09:00</time> -
+										<time datetime="23:00">23:00</time>
+									</p>
+									<p class="footer__list-text">
+										Бассейн: <time datetime="09:00">09:00</time> -
+										<time datetime="23:00">23:00</time>
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="footer__item footer__item-gym">
+							<div class="footer__item-link">
+								<a href="#">Тренажерный зал</a>
+								<a href="#">Спортивный бассейн</a>
+								<a href="#">Персональный тренинг</a>
+								<a href="#">Аэробные и кардио программы</a>
+								<a href="#">Скаладром для детей</a>
+							</div>
+						</div>
+
+						<div class="footer__item footer__item-martial">
+							<div class="footer__item-link">
+								<a href="#">Единоборства</a>
+								<a href="#">Танцы</a>
+								<a href="#">Фитнес-тестирование</a>
+								<a href="#">Вакансии</a>
+								<a href="#">Подарочный сертификат</a>
+							</div>
+						</div>
+
+						<div class="footer__item footer__item-address">
+							<div class="footer__location">
+								<ul class="footer__location-list">
+									<li class="footer__location-item">
+										<svg class="icon footer__location-icon">
+											<use xlink:href="images/sprite.svg#location"></use>
+										</svg>
+										<a
+											href="https://www.google.com/maps?q=г. Москва, м. Ясенево, ул. Голубинская, д. 16"
+											class="footer__location-link"
+											>г. Москва, м. Яснево, ул. Голубинская д. 16</a
+										>
+									</li>
+									<li class="footer__location-item">
+										<svg class="icon footer__location-icon">
+											<use xlink:href="images/sprite.svg#phone"></use>
+										</svg>
+										<a href="tel:74958590370" class="footer__location-link"
+											>+7 (495) 859-03-70</a
+										>
+									</li>
+								</ul>
+							</div>
+							<div class="footer__social">
+								<a href="" class="footer__location-link">
+									<svg class="icon footer__social-icon">
+										<use xlink:href="images/sprite.svg#vk"></use>
+									</svg>
+								</a>
+								<a href="" class="footer__location-link">
+									<svg class="icon footer__social-icon">
+										<use xlink:href="images/sprite.svg#instagram"></use>
+									</svg>
+								</a>
+								<a href="" class="footer__location-link">
+									<svg class="icon footer__social-icon">
+										<use xlink:href="images/sprite.svg#Facebook"></use>
+									</svg>
+								</a>
+							</div>
+							<div class="footer__application">
+								<h3 class="footer__application-title">Скачайте приложение</h3>
+								<div class="footer__application-container">
+									<a href="#" class="footer__application-link">
+										<img
+											class="footer__application-img"
+											src="images/img/google_market.webp"
+											alt="google market "
+										/>
+									</a>
+									<a href="#" class="footer__application-link">
+										<img
+											class="footer__application-img"
+											src="images/img/app_store.webp"
+											alt="app store"
+										/>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer__bottom"></div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="js/js-training.js"></script>
+		<script src="js/render-trainer.js"></script>
+		<script src="js/main.js" defer></script>
+
+		<!-- defer атрибут что будет загружаться в конце -->
+	</body>
+</html>

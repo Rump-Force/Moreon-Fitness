@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<!-- swiper -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+
+		<!-- swiper -->
+
+		<link rel="stylesheet" href="css/styles.css" />
+		<!-- Шрифты -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Шрифты -->
+		<!-- <link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+		/> -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+		/>
+		<!--=============== boxicons ===============-->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css"
+			crossorigin=""
+		/>
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__inner">
+				<div class="header__top">
+					<div class="container">
+						<div class="header__box">
+							<div class="header__top-mobile">
+								<svg class="icon">
+									<use xlink:href="images/sprite.svg#phone"></use>
+								</svg>
+								<a href="tel:74958590372" class="header__top-mobile-link"
+									>+7 (495) 859-03-72
+								</a>
+							</div>
+							<div class="header__top-social">
+								<a href="#">
+									<svg class="icon">
+										<use xlink:href="images/sprite.svg#telegram"></use>
+									</svg>
+								</a>
+								<a href="#">
+									<svg class="icon">
+										<use xlink:href="images/sprite.svg#instagram"></use>
+									</svg>
+								</a>
+								<a href="#">
+									<svg class="icon">
+										<use xlink:href="images/sprite.svg#Facebook"></use>
+									</svg>
+								</a>
+								<a href="#">
+									<svg class="icon">
+										<use xlink:href="images/sprite.svg#vk"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header__bottom">
+					<div class="container">
+						<div class="header__bottom-box">
+							<button class="header__burger-menu">
+								<span class="burger-menu-item"></span>
+								<span class="burger-menu-item"></span>
+								<span class="burger-menu-item"></span>
+							</button>
+							<div class="header__logo">
+								<a href="index.html">
+									<svg class="icon">
+										<use xlink:href="images/sprite.svg#logo-white"></use>
+									</svg>
+								</a>
+							</div>
+							<nav class="header__bottom-menu">
+								<ul class="header__menu-list">
+									<li class="header__menu-item">
+										<a href="club.html" class="header__menu-link">О клубе</a>
+									</li>
+									<li class="header__menu-item">
+										<a href="classes.html" class="header__menu-link active-menu">КроссТренинг</a>
+									</li>
+									<li class="header__menu-item">
+										<a href="club-cards.html" class="header__menu-link">Клубные карты</a>
+									</li>
+									<li class="header__menu-item">
+										<a href="services.html" class="header__menu-link">Услуги</a>
+									</li>
+									<li class="header__menu-item">
+										<a href="" class="header__menu-link">Расписание</a>
+									</li>
+									<li class="header__menu-item">
+										<a href="" class="header__menu-link">Бани и бассейны</a>
+									</li>
+									<li class="header__menu-item">
+										<a href="" class="header__menu-link">Детский центр</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="overlay"></div>
+
+		<div class="sidebar">
+			<!-- <div class="sidebar__close-icons"></div> -->
+			<nav class="sidebar__menu">
+				<ul class="sidebar__menu-item">
+					<li class="sidebar__menu-items">
+						<a href="club.html" class="sidebar__menu-link">О клубе</a>
+					</li>
+					<li class="sidebar__menu-items">
+						<a href="classes.html" class="sidebar__menu-link active-menu">КроссТренинг</a>
+					</li>
+					<li class="sidebar__menu-items">
+						<a href="club-cards.html" class="sidebar__menu-link">Клубные карты</a>
+					</li>
+					<li class="sidebar__menu-items">
+						<a href="services.html" class="sidebar__menu-link">Услуги</a>
+					</li>
+					<li class="sidebar__menu-items">
+						<a href="#" class="sidebar__menu-link">Расписание</a>
+					</li>
+					<li class="sidebar__menu-items">
+						<a href="#" class="sidebar__menu-link">Бани и бассейны</a>
+					</li>
+					<li class="sidebar__menu-items">
+						<a href="#" class="sidebar__menu-link">Детский центр</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
+		<section class="classes-banner">
+			<div class="container">
+				<div class="classes__inner">
+					<div class="classes__breadcrumb">
+						<ul class="classes__breadcrumb-list">
+							<li class="classes_breadcrumb-item">
+								<a href="index.html" class="classes_breadcrumb-link">Главная</a>
+							</li>
+							<li class="classes_breadcrumb-item">
+								<a href="#" class="classes_breadcrumb-link"
+									>Силовые и функциональные тренировки</a
+								>
+							</li>
+							<li class="classes_breadcrumb-item active-breadcrumb">
+								КроссТренинг
+							</li>
+						</ul>
+					</div>
+
+					<div class="classes__content">
+						<h1 class="classes__title">КроссТренинг</h1>
+						<p class="classes__text">
+							Тренировки в стиле КроссФит, программа упражнений на силу и
+							выносливость, состоящая в основном из анаэробных упражнений,
+							гимнастики (упражнения с весом собственного тела) и тяжёлой
+							атлетики. Помогают укрепить мускулатуры и избавиться от жировых
+							отложений.
+						</p>
+						<button class="classes__button btn-button">
+							Записаться на КроссТренинг
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="schedule">
+			<div class="container">
+				<h2 class="schedule__title">
+					<span class="title-accent">Тренеры</span> направления
+				</h2>
+				<div class="schedule__inner">
+					<!-- Десктоп-слайдер -->
+					<div class="swiper desktop-slider single-slide">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide desktop-slider-block">
+								<div class="block">
+									<a
+										href="consequential.html?id=ivanov"
+										class="desktop__slide-link"
+									>
+										<div class="desktop__slide-box">
+											<div class="desktop__slide-img">
+												<img src="images/img/schedule_skide-1.webp" alt="" />
+											</div>
+											<div class="desktop__slide-content">
+												<h2 class="slide-content-title">Иван Иванов</h2>
+												<p class="slide-content-text">
+													Мастер тренер. Элит тренер
+												</p>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="swiper-slide desktop-slider-block">
+								<div class="block">
+									<a
+										href="consequential.html?id=petrov"
+										class="desktop__slide-link"
+									>
+										<div class="desktop__slide-box">
+											<div class="desktop__slide-img">
+												<img src="images/img/schedule_skide-2.webp" alt="" />
+											</div>
+											<div class="desktop__slide-content">
+												<h2 class="slide-content-title">Иван Иванов</h2>
+												<p class="slide-content-text">
+													Мастер тренер. Элит тренер
+												</p>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="swiper-slide desktop-slider-block">
+								<div class="block">
+									<a
+										href="consequential.html?id=sidorov"
+										class="desktop__slide-link"
+									>
+										<div class="desktop__slide-box">
+											<div class="desktop__slide-img">
+												<img src="images/img/schedule_skide-3.webp" alt="" />
+											</div>
+											<div class="desktop__slide-content">
+												<h2 class="slide-content-title">Иван Иванов</h2>
+												<p class="slide-content-text">
+													Мастер тренер. Элит тренер
+												</p>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="swiper-slide desktop-slider-block">
+								<div class="block">
+									<a
+										href="consequential.html?id=smirnov"
+										class="desktop__slide-link"
+									>
+										<div class="desktop__slide-box">
+											<div class="desktop__slide-img">
+												<img src="images/img/schedule_skide-4.webp" alt="" />
+											</div>
+											<div class="desktop__slide-content">
+												<h2 class="slide-content-title">Иван Иванов</h2>
+												<p class="slide-content-text">
+													Мастер тренер. Элит тренер
+												</p>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="swiper-slide desktop-slider-block">
+								<div class="block">
+									<a
+										href="consequential.html?id=lebedev"
+										class="desktop__slide-link"
+									>
+										<div class="desktop__slide-box">
+											<div class="desktop__slide-img">
+												<img src="images/img/schedule_skide-5.webp" alt="" />
+											</div>
+											<div class="desktop__slide-content">
+												<h2 class="slide-content-title">Иван Иванов</h2>
+												<p class="slide-content-text">
+													Мастер тренер. Элит тренер
+												</p>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="swiper-slide desktop-slider-block">
+								<div class="block">
+									<a
+										href="consequential.html?id=egorov"
+										class="desktop__slide-link"
+									>
+										<div class="desktop__slide-box">
+											<div class="desktop__slide-img">
+												<img src="images/img/schedule_skide-6.webp" alt="" />
+											</div>
+											<div class="desktop__slide-content">
+												<h2 class="slide-content-title">Иван Иванов</h2>
+												<p class="slide-content-text">
+													Мастер тренер. Элит тренер
+												</p>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="swiper-slide desktop-slider-block">
+								<div class="block">
+									<a
+										href="consequential.html?id=nikolaev"
+										class="desktop__slide-link"
+									>
+										<div class="desktop__slide-box">
+											<div class="desktop__slide-img">
+												<img src="images/img/schedule_skide-7.webp" alt="" />
+											</div>
+											<div class="desktop__slide-content">
+												<h2 class="slide-content-title">Иван Иванов</h2>
+												<p class="slide-content-text">
+													Мастер тренер. Элит тренер
+												</p>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="swiper-slide desktop-slider-block">
+								<div class="block">
+									<a
+										href="consequential.html?id=fedorov"
+										class="desktop__slide-link"
+									>
+										<div class="desktop__slide-box">
+											<div class="desktop__slide-img">
+												<img src="images/img/schedule_skide-8.webp" alt="" />
+											</div>
+											<div class="desktop__slide-content">
+												<h2 class="slide-content-title">Иван Иванов</h2>
+												<p class="slide-content-text">
+													Мастер тренер. Элит тренер
+												</p>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="swiper-slide desktop-slider-block">
+								<div class="block">
+									<a
+										href="consequential.html?id=artem"
+										class="desktop__slide-link"
+									>
+										<div class="desktop__slide-box">
+											<div class="desktop__slide-img">
+												<img src="images/img/schedule_skide-1.webp" alt="" />
+											</div>
+											<div class="desktop__slide-content">
+												<h2 class="slide-content-title">Артём Владимирович</h2>
+												<p class="slide-content-text">
+													Мастер тренер. Элит тренер
+												</p>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="swiper-slide desktop-slider-block">
+								<div class="block">
+									<a
+										href="consequential.html?id=dmitry"
+										class="desktop__slide-link"
+									>
+										<div class="desktop__slide-box">
+											<div class="desktop__slide-img">
+												<img src="images/img/schedule_skide-2.webp" alt="" />
+											</div>
+											<div class="desktop__slide-content">
+												<h2 class="slide-content-title">Дмитрий Павлович</h2>
+												<p class="slide-content-text">
+													Мастер тренер. Элит тренер
+												</p>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="swiper-slide desktop-slider-block">
+								<div class="block">
+									<a
+										href="consequential.html?id=ivan"
+										class="desktop__slide-link"
+									>
+										<div class="desktop__slide-box">
+											<div class="desktop__slide-img">
+												<img src="images/img/schedule_skide-3.webp" alt="" />
+											</div>
+											<div class="desktop__slide-content">
+												<h2 class="slide-content-title">Иван Алексеевич</h2>
+												<p class="slide-content-text">
+													Мастер тренер. Элит тренер
+												</p>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="swiper-slide desktop-slider-block">
+								<div class="block">
+									<a
+										href="consequential.html?id=alina"
+										class="desktop__slide-link"
+									>
+										<div class="desktop__slide-box">
+											<div class="desktop__slide-img">
+												<img src="images/img/schedule_skide-4.webp" alt="" />
+											</div>
+											<div class="desktop__slide-content">
+												<h2 class="slide-content-title">Алина Сергеевна</h2>
+												<p class="slide-content-text">
+													Мастер тренер. Элит тренер
+												</p>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="swiper-slide desktop-slider-block">
+								<div class="block">
+									<a
+										href="consequential.html?id=maria"
+										class="desktop__slide-link"
+									>
+										<div class="desktop__slide-box">
+											<div class="desktop__slide-img">
+												<img src="images/img/schedule_skide-5.webp" alt="" />
+											</div>
+											<div class="desktop__slide-content">
+												<h2 class="slide-content-title">Мария Викторовна</h2>
+												<p class="slide-content-text">
+													Мастер тренер. Элит тренер
+												</p>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="swiper-slide desktop-slider-block">
+								<div class="block">
+									<a
+										href="consequential.html?id=nikita"
+										class="desktop__slide-link"
+									>
+										<div class="desktop__slide-box">
+											<div class="desktop__slide-img">
+												<img src="images/img/schedule_skide-6.webp" alt="" />
+											</div>
+											<div class="desktop__slide-content">
+												<h2 class="slide-content-title">Никита Олегович</h2>
+												<p class="slide-content-text">
+													Мастер тренер. Элит тренер
+												</p>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="swiper-slide desktop-slider-block">
+								<div class="block">
+									<a
+										href="consequential.html?id=sergey"
+										class="desktop__slide-link"
+									>
+										<div class="desktop__slide-box">
+											<div class="desktop__slide-img">
+												<img src="images/img/schedule_skide-7.webp" alt="" />
+											</div>
+											<div class="desktop__slide-content">
+												<h2 class="slide-content-title">Сергей Иванович</h2>
+												<p class="slide-content-text">
+													Мастер тренер. Элит тренер
+												</p>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="swiper-slide desktop-slider-block">
+								<div class="block">
+									<a
+										href="consequential.html?id=alexander"
+										class="desktop__slide-link"
+									>
+										<div class="desktop__slide-box">
+											<div class="desktop__slide-img">
+												<img src="images/img/schedule_skide-8.webp" alt="" />
+											</div>
+											<div class="desktop__slide-content">
+												<h2 class="slide-content-title">
+													Александр Михайлович
+												</h2>
+												<p class="slide-content-text">
+													Мастер тренер. Элит тренер
+												</p>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+
+							<div class="swiper mobile-slider">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="block">
+											<a
+												href="consequential.html?id=ivanov"
+												class="desktop__slide-link"
+											>
+												<div class="mobile__slide-box">
+													<div class="mobile__slide-img">
+														<img
+															src="images/img/schedule_skide-1.webp"
+															alt=""
+														/>
+													</div>
+													<div class="mobile__slide-content">
+														<h2 class="slide-content-title">Иван Иванов</h2>
+														<p class="slide-content-text">
+															Мастер тренер. Элит тренер
+														</p>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="block">
+											<a
+												href="consequential.html?id=petrov"
+												class="desktop__slide-link"
+											>
+												<div class="mobile__slide-box">
+													<div class="mobile__slide-img">
+														<img
+															src="images/img/schedule_skide-2.webp"
+															alt=""
+														/>
+													</div>
+													<div class="mobile__slide-content">
+														<h2 class="slide-content-title">Иван Иванов</h2>
+														<p class="slide-content-text">
+															Мастер тренер. Элит тренер
+														</p>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="block">
+											<a
+												href="consequential.html?id=sidorov"
+												class="desktop__slide-link"
+											>
+												<div class="mobile__slide-box">
+													<div class="mobile__slide-img">
+														<img
+															src="images/img/schedule_skide-3.webp"
+															alt=""
+														/>
+													</div>
+													<div class="mobile__slide-content">
+														<h2 class="slide-content-title">Иван Иванов</h2>
+														<p class="slide-content-text">
+															Мастер тренер. Элит тренер
+														</p>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="block">
+											<a
+												href="consequential.html?id=smirnov"
+												class="desktop__slide-link"
+											>
+												<div class="mobile__slide-box">
+													<div class="mobile__slide-img">
+														<img
+															src="images/img/schedule_skide-4.webp"
+															alt=""
+														/>
+													</div>
+													<div class="mobile__slide-content">
+														<h2 class="slide-content-title">Иван Иванов</h2>
+														<p class="slide-content-text">
+															Мастер тренер. Элит тренер
+														</p>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="block">
+											<a
+												href="consequential.html?id=lebedev"
+												class="desktop__slide-link"
+											>
+												<div class="mobile__slide-box">
+													<div class="mobile__slide-img">
+														<img
+															src="images/img/schedule_skide-5.webp"
+															alt=""
+														/>
+													</div>
+													<div class="mobile__slide-content">
+														<h2 class="slide-content-title">Иван Иванов</h2>
+														<p class="slide-content-text">
+															Мастер тренер. Элит тренер
+														</p>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="block">
+											<a
+												href="consequential.html?id=egorov"
+												class="desktop__slide-link"
+											>
+												<div class="mobile__slide-box">
+													<div class="mobile__slide-img">
+														<img
+															src="images/img/schedule_skide-6.webp"
+															alt=""
+														/>
+													</div>
+													<div class="mobile__slide-content">
+														<h2 class="slide-content-title">Иван Иванов</h2>
+														<p class="slide-content-text">
+															Мастер тренер. Элит тренер
+														</p>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="block">
+											<a
+												href="consequential.html?id=nikolaev"
+												class="desktop__slide-link"
+											>
+												<div class="mobile__slide-box">
+													<div class="mobile__slide-img">
+														<img
+															src="images/img/schedule_skide-7.webp"
+															alt=""
+														/>
+													</div>
+													<div class="mobile__slide-content">
+														<h2 class="slide-content-title">Иван Иванов</h2>
+														<p class="slide-content-text">
+															Мастер тренер. Элит тренер
+														</p>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="block">
+											<a
+												href="consequential.html?id=fedorov"
+												class="desktop__slide-link"
+											>
+												<div class="mobile__slide-box">
+													<div class="mobile__slide-img">
+														<img
+															src="images/img/schedule_skide-8.webp"
+															alt=""
+														/>
+													</div>
+													<div class="mobile__slide-content">
+														<h2 class="slide-content-title">Иван Иванов</h2>
+														<p class="slide-content-text">
+															Мастер тренер. Элит тренер
+														</p>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div
+									class="swiper-pagination dealt-pagination mobile_swiper-pagination"
+								></div>
+								<!-- <div class="swiper-button-prev"></div>
+									<div class="swiper-button-next"></div> -->
+							</div>
+						</div>
+						<div
+							class="swiper-pagination dealt-pagination desktop_swiper-pagination"
+						></div>
+						<!-- <div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div> -->
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="gallery">
+			<div class="container">
+				<div class="swiper gallery-slider">
+					<div class="swiper-wrapper">
+						<!-- Слайды -->
+						<div class="swiper-slide">
+							<a
+								href="images/img/gallery-slider-1.webp"
+								data-fancybox="gallery-slider"
+							>
+								<img src="images/img/gallery-slider-1.webp" alt="Тренировка" />
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a
+								href="images/img/gallery-slider-2.webp"
+								data-fancybox="gallery-slider"
+							>
+								<img src="images/img/gallery-slider-2.webp" alt="Зал" />
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a
+								href="images/img/gallery-slider-3.webp"
+								data-fancybox="gallery-slider"
+							>
+								<img src="images/img/gallery-slider-3.webp" alt="Зал" />
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a
+								href="images/img/gallery-slider-4.webp"
+								data-fancybox="gallery-slider"
+							>
+								<img src="images/img/gallery-slider-4.webp" alt="Зал" />
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a
+								href="images/img/gallery-slider-5.webp"
+								data-fancybox="gallery-slider"
+							>
+								<img src="images/img/gallery-slider-5.webp" alt="Зал" />
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a
+								href="images/img/gallery-slider-6.webp"
+								data-fancybox="gallery-slider"
+							>
+								<img src="images/img/gallery-slider-6.webp" alt="Зал" />
+							</a>
+						</div>
+					</div>
+					<!-- Навигация -->
+					<div class="swiper-button-prev gallery-button-prev">
+						<svg class="icon icon-navigation">
+							<use xlink:href="images/sprite.svg#Arrow_left-stock"></use>
+						</svg>
+					</div>
+					<div class="swiper-button-next gallery-button-next">
+						<svg class="icon icon-navigation">
+							<use
+								xlink:href="images/sprite.svg#Arrow_right-stock"
+								fill="red"
+							></use>
+						</svg>
+					</div>
+					<div class="swiper-pagination gallery-swiper-pagination"></div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 		
+		<script>
+			document.addEventListener('DOMContentLoaded', () => {
+				Fancybox.bind('[data-fancybox]', {
+					// Настройки (можно оставить пустыми для стандартного поведения)
+					Image: {
+						zoom: false,
+					},
+				})
+			})
+		</script> -->
+
+		<div class="video">
+			<div class="container">
+				<div class="video__inner">
+					<h2 class="video__title">
+						Видео о клубе <span class="title-accent">Moreon Fitness</span>
+					</h2>
+					<div class="video__box">
+						<video
+							src="images/Moreon Fitness.mp4"
+							loop
+							controls
+							controlsList="nodownload noremoteplayback"
+						></video>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<section class="questionsForm">
+			<div class="container">
+				<div class="questionsForm__inner">
+					<h2 class="questionsForm__title">Остались вопросы?</h2>
+					<p class="questionsForm__text">
+						Заполните заявку и мы поможем подобрать наиболее выгодный вариант
+						тренировок для вас
+					</p>
+
+					<form action="" class="questionsForm__form">
+						<div class="questionsForm__form-box">
+							<input
+								class="questionsForm__form-input"
+								type="text"
+								placeholder="Напишите ваше ФИО"
+								required
+							/>
+							<input
+								class="questionsForm__form-input"
+								type="tel"
+								placeholder="+7 967"
+								required
+							/>
+						</div>
+						<textarea
+							class="questionsForm__form-textarea"
+							name=""
+							id=""
+							placeholder="Напишите ваш комментарий"
+						></textarea>
+						<div class="questionsForm__form-agreement">
+							<input type="checkbox" id="agreement" required />
+
+							<p class="questionsForm__form-agreement-text">
+								Соглашаюсь с условиями обработки данных
+							</p>
+						</div>
+						<div class="questionsForm__form-btn-wrapper">
+							<button class="questionsForm__form-btn btn-button" type="submit">
+								Отправить заявку на гостевой визит
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<section class="other">
+			<div class="container">
+				<h2 class="other__title">Другие направления</h2>
+				<div class="other__inner">
+					<div class="other-slider swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a href="#" class="other-slider-link">
+									<img
+										src="images/img/other-1.webp"
+										alt="Event"
+										class="slide-img"
+									/>
+									<div class="slide-content">
+										<h3 class="slide-content-title">Mind Body</h3>
+									</div>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="other-slider-link">
+									<img
+										src="images/img/other-2.webp"
+										alt="Event"
+										class="slide-img"
+									/>
+									<div class="slide-content">
+										<h3 class="slide-content-title">
+											Силовые и функциональные<br />
+											тренировки
+										</h3>
+									</div>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="other-slider-link">
+									<img
+										src="images/img/other-3.webp"
+										alt="Event"
+										class="slide-img"
+									/>
+									<div class="slide-content">
+										<h3 class="slide-content-title">Кардиограммы и аэробика</h3>
+									</div>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="other-slider-link">
+									<img
+										src="images/img/other-4.webp"
+										alt="Event"
+										class="slide-img"
+									/>
+									<div class="slide-content">
+										<h3 class="slide-content-title">Йога и растяжка</h3>
+									</div>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="other-slider-link">
+									<img
+										src="images/img/other-5.webp"
+										alt="Event"
+										class="slide-img"
+									/>
+									<div class="slide-content">
+										<h3 class="slide-content-title">
+											Танцевальные направления
+										</h3>
+									</div>
+								</a>
+							</div>
+						</div>
+						<!-- Навигация -->
+						<div class="swiper-button-prev other-prev">
+							<svg class="icon icon-navigation">
+								<use xlink:href="images/sprite.svg#Arrow_left-stock"></use>
+							</svg>
+						</div>
+						<div class="swiper-button-next other-next">
+							<svg class="icon icon-navigation">
+								<use
+									xlink:href="images/sprite.svg#Arrow_right-stock"
+									fill="red"
+								></use>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="yasnovo">
+			<div class="container">
+				<h2 class="yasnovo__title">
+					<span class="title-accent">Moreon Fitness</span> Яснево
+				</h2>
+				<div class="yasnovo__inner">
+					<div class="yasnovo__box">
+						<p class="yasnovo__text">
+							Мореон Фитнес – семейный премиум фитнес-клуб с бассейном, 40
+							видами групповых программ, детским клубом, школой единоборств и
+							скалодромом.
+						</p>
+						<p class="yasnovo__text">
+							Оборудование тренажерного зала поставляет эксклюзивный партнер
+							Олимпийских игр - Technogym, а тренировки проводят призеры
+							российских и международных соревнований.
+						</p>
+						<p class="yasnovo__text">
+							Групповые программы учитывают особенности нагрузок для женщин и
+							мужчин, инструкторы тренируют детей и подростков, проводят занятия
+							для пожилых людей. На сайте Мореон Фитнес описаны все программы,
+							их польза, преимущества и расписание.
+						</p>
+						<p class="yasnovo__text">
+							Спортивный бассейн фитнес-центра «Мореон» - база для тренировок и
+							соревнований школы спортивного плавания, площадка для водных
+							групповых программ, персональных тренировок и свободного плавания.
+							В бассейне «Тоник» учатся плавать самые маленькие клиенты –
+							посетители студии грудничкового плавания.
+						</p>
+						<p class="yasnovo__text">
+							Мы хотим, чтобы занятия спортом были не только приятными и
+							полезными, но и удобными. Перед тренировкой каждый клиент получает
+							электронный ключ от индивидуальной ячейки хранения, халат и
+							полотенце. В раздевалках работают солярии. Разрядиться, расслабить
+							мускулы, отдохнуть душой и телом можно в релакс-зонах «Мореон» -
+							банном комплексе «Термы» и пространстве Мореон SPA.
+						</p>
+						<p class="yasnovo__text">
+							Мореон Фитнес – лучший фитнес-центр в Ясенево, а также для районов
+							Теплый Стан, Беляево, Коньково и Коммунарка и Юго-Западная. Мы
+							находимся рядом с метро «Ясенево», с удобным подъездом со стороны
+							МКАДа и ТТК (Севастопольский пр-т). Для членов клуба действует
+							бесплатная парковка.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="contacts">
+			<div class="container">
+				<div class="contacts__inner">
+					<div class="contacts__box">
+						<h2 class="contacts__title">Контакты</h2>
+						<ul class="contacts__info">
+							<li class="contacts__info-items">
+								<h3 class="contacts__subtitle">Адрес:</h3>
+								<a
+									href="https://www.google.com/maps?q=г. Москва, м. Ясенево, ул. Голубинская, д. 16"
+									class="contacts__text text-home"
+									target="blank"
+								>
+									г. Москва м. Ясенево, ул. Голубинская, д. 16
+								</a>
+							</li>
+							<li class="contacts__info-items">
+								<h3 class="contacts__subtitle">Телефон:</h3>
+								<a href="tel:+74954816060" class="contacts__text text-home"
+									>+7 (495) 481-60-60
+								</a>
+							</li>
+							<li class="contacts__info-items">
+								<h3 class="contacts__subtitle">E-mail:</h3>
+								<a
+									href="mailto:moreon@more-on.ru"
+									class="contacts__text text-home"
+									>moreon@more-on.ru
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="contacts__map">
+						<div class="map-container">
+							<iframe
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2240.6152292065114!2d37.527184!3d55.597246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab4a31de0e065%3A0x65f0114a4f91c01a!2z0YPQuy4g0JPQtdC90LjQvdCw0Y8sIDE2LCDQnNC-0YHQutCy0LAsINCc0L7RgdC60LLQsCwgMTE3NTU3!5e0!3m2!1sru!2sru!4v1717684420006!5m2!1sru!2sru"
+								allowfullscreen=""
+								loading="lazy"
+								referrerpolicy="no-referrer-when-downgrade"
+							></iframe>
+							<div class="map-marker">📍 Наш адрес</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__inner">
+					<div class="footer__top">
+						<div class="footer__item footer__item-time">
+							<div class="footer__logo">
+								<svg class="icon footer__logo-icon">
+									<use xlink:href="images/sprite.svg#logo-white"></use>
+								</svg>
+							</div>
+							<div class="footer__item-time">
+								<h3 class="footer__item-time-title">Время работы:</h3>
+								<div class="footer__list">
+									<p class="footer__list-text">
+										Будни: <time datetime="07:00">07:00</time> -
+										<time datetime="23:00">23:00</time>
+									</p>
+									<p class="footer__list-text">
+										Бассейн: <time datetime="07:00">07:00</time> -
+										<time datetime="23:00">23:00</time>
+									</p>
+								</div>
+								<div class="footer__list">
+									<p class="footer__list-text">
+										Выходные: <time datetime="09:00">09:00</time> -
+										<time datetime="23:00">23:00</time>
+									</p>
+									<p class="footer__list-text">
+										Бассейн: <time datetime="09:00">09:00</time> -
+										<time datetime="23:00">23:00</time>
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="footer__item footer__item-gym">
+							<div class="footer__item-link">
+								<a href="#">Тренажерный зал</a>
+								<a href="#">Спортивный бассейн</a>
+								<a href="#">Персональный тренинг</a>
+								<a href="#">Аэробные и кардио программы</a>
+								<a href="#">Скаладром для детей</a>
+							</div>
+						</div>
+
+						<div class="footer__item footer__item-martial">
+							<div class="footer__item-link">
+								<a href="#">Единоборства</a>
+								<a href="#">Танцы</a>
+								<a href="#">Фитнес-тестирование</a>
+								<a href="#">Вакансии</a>
+								<a href="#">Подарочный сертификат</a>
+							</div>
+						</div>
+
+						<div class="footer__item footer__item-address">
+							<div class="footer__location">
+								<ul class="footer__location-list">
+									<li class="footer__location-item">
+										<svg class="icon footer__location-icon">
+											<use xlink:href="images/sprite.svg#location"></use>
+										</svg>
+										<a
+											href="https://www.google.com/maps?q=г. Москва, м. Ясенево, ул. Голубинская, д. 16"
+											class="footer__location-link"
+											>г. Москва, м. Яснево, ул. Голубинская д. 16</a
+										>
+									</li>
+									<li class="footer__location-item">
+										<svg class="icon footer__location-icon">
+											<use xlink:href="images/sprite.svg#phone"></use>
+										</svg>
+										<a href="tel:74958590370" class="footer__location-link"
+											>+7 (495) 859-03-70</a
+										>
+									</li>
+								</ul>
+							</div>
+							<div class="footer__social">
+								<a href="" class="footer__location-link">
+									<svg class="icon footer__social-icon">
+										<use xlink:href="images/sprite.svg#vk"></use>
+									</svg>
+								</a>
+								<a href="" class="footer__location-link">
+									<svg class="icon footer__social-icon">
+										<use xlink:href="images/sprite.svg#instagram"></use>
+									</svg>
+								</a>
+								<a href="" class="footer__location-link">
+									<svg class="icon footer__social-icon">
+										<use xlink:href="images/sprite.svg#Facebook"></use>
+									</svg>
+								</a>
+							</div>
+							<div class="footer__application">
+								<h3 class="footer__application-title">Скачайте приложение</h3>
+								<div class="footer__application-container">
+									<a href="#" class="footer__application-link">
+										<img
+											class="footer__application-img"
+											src="images/img/google_market.webp"
+											alt="google market "
+										/>
+									</a>
+									<a href="#" class="footer__application-link">
+										<img
+											class="footer__application-img"
+											src="images/img/app_store.webp"
+											alt="app store"
+										/>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer__bottom"></div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="js/main.js" defer></script>
+		<!-- defer атрибут что будет загружаться в конце -->
+	</body>
+</html>
