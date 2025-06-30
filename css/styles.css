@@ -4201,6 +4201,9 @@ sup {
 	.lotus__inner {
 		justify-items: center;
 	}
+.classes__breadcrumb-list {
+        flex-wrap: wrap;
+}
 }
 
 
