@@ -842,34 +842,73 @@
 		<script>
 			function openTab(evt, tabId) {
 				// Показ/скрытие табов
-				document.querySelectorAll('.tab__content-box').forEach(el => el.classList.remove('active'));
-				document.getElementById(tabId).classList.add('active');
-	
+				document
+					.querySelectorAll('.tab__content-box')
+					.forEach(el => el.classList.remove('active'))
+				document.getElementById(tabId).classList.add('active')
+
 				// Обновление кнопок
-				document.querySelectorAll('.tab__button').forEach(el => el.classList.remove('active-btn'));
-				if (evt) evt.currentTarget.classList.add('active-btn');
-	
+				document
+					.querySelectorAll('.tab__button')
+					.forEach(el => el.classList.remove('active-btn'))
+				if (evt) evt.currentTarget.classList.add('active-btn')
+
 				// Синхронизация select
-				document.getElementById('tabSelect').value = tabId;
+				document.getElementById('tabSelect').value = tabId
 			}
-	
+
 			// Обработка select
-			document.getElementById('tabSelect').addEventListener('change', function () {
-				openTab(null, this.value);
-			});
-	
+			document
+				.getElementById('tabSelect')
+				.addEventListener('change', function () {
+					openTab(null, this.value)
+				})
+
 			// Обработка подтабов
 			document.querySelectorAll('.tab__button-btn-text').forEach(btn => {
 				btn.addEventListener('click', function () {
-					const container = this.closest('.tab__content-box');
-					const content = container.querySelector('.tab__content');
-					content.innerHTML = this.dataset.text;
-	
+					const container = this.closest('.tab__content-box')
+					const content = container.querySelector('.tab__content')
+					content.innerHTML = this.dataset.text
+
 					// Активное состояние
-					container.querySelectorAll('.tab__button-btn-text').forEach(b => b.classList.remove('active'));
-					this.classList.add('active');
-				});
-			});
+					container
+						.querySelectorAll('.tab__button-btn-text')
+						.forEach(b => b.classList.remove('active'))
+					this.classList.add('active')
+				})
+			})
+			// Добавляем обработчик для выпадающего списка
+			document
+				.getElementById('tabSelect')
+				.addEventListener('change', function () {
+					// Получаем значение выбранного option
+					const selectedTab = this.value
+
+					// Скрываем все табы
+					document.querySelectorAll('.tab__content-box').forEach(tab => {
+						tab.style.display = 'none'
+					})
+
+					// Показываем выбранный таб
+					document.getElementById(selectedTab).style.display = 'block'
+
+					// Обновляем активную кнопку (для синхронизации с десктопной версией)
+					document.querySelectorAll('.tab__button').forEach(btn => {
+						btn.classList.remove('active-btn')
+						if (btn.getAttribute('onclick').includes(selectedTab)) {
+							btn.classList.add('active-btn')
+						}
+					})
+				})
+
+			// Инициализация при загрузке - открываем таб по умолчанию
+			document.addEventListener('DOMContentLoaded', function () {
+				const defaultTab = document.getElementById('defaultOpen')
+				if (defaultTab) {
+					defaultTab.click() // Программно "нажимаем" кнопку по умолчанию
+				}
+			})
 		</script>
 		<!-- <script>
 			window.onload = function() {
